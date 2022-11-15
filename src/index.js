@@ -3,7 +3,7 @@ import { App } from "./App";
 
 const mountNode = document.querySelector("#app");
 
-m.route.prefix = ''
-m.route(mountNode, '/', {
-    '/': App,
-})
+m.route.prefix = "";
+m.route(mountNode, "/", {
+  "/": App
+});
