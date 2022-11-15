@@ -5,8 +5,8 @@ export const App = () => {
     view: () => {
       return m("main", [
         m("h1", { class: "title" }, "mithril-boilerplate"),
-        m("a", { href: "/login" }, "Log in")
+        m("a", { href: "/login" }, "Log in"),
       ]);
-    }
+    },
   };
 };

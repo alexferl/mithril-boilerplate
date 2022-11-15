@@ -1,7 +1,7 @@
 import m from "mithril";
-import { Login } from "../../models/LoginModel";
+import { LoginModel } from "../../models/LoginModel";
 
-export const LoginForm = () => {
+export const Login = () => {
   return {
     email: "",
     password: "",
@@ -11,25 +11,25 @@ export const LoginForm = () => {
         {
           onsubmit: (e) => {
             e.preventDefault();
-            Login().do(LoginForm.email, LoginForm.password);
-          }
+            LoginModel().do(Login.email, Login.password);
+          },
         },
         [
           m("label.label", "email"),
           m("input.input[type=email][placeholder=email]", {
             oninput: (e) => {
-              LoginForm.email = e.target.value;
-            }
+              Login.email = e.target.value;
+            },
           }),
           m("label.label", "password"),
           m("input.input[type=password][placeholder=password]", {
             oninput: (e) => {
-              LoginForm.password = e.target.value;
-            }
+              Login.password = e.target.value;
+            },
           }),
-          m("button.button[type=submit]", "Log in")
-        ]
+          m("button.button[type=submit]", "Log in"),
+        ],
       );
-    }
+    },
   };
 };

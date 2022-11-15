@@ -6,16 +6,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "prettier --plugin-search-dir . --check . && eslint .",
-    "format": "prettier --plugin-search-dir . --write ."
+    "lint": "npx rome check .",
+    "format": "npx rome format . --write"
   },
   "dependencies": {
     "mithril": "^2.2.2"
   },
   "devDependencies": {
-    "eslint": "^8.27.0",
-    "eslint-config-prettier": "^8.5.0",
-    "prettier": "^2.7.1",
+    "rome": "^10.0.1",
     "vite": "^3.2.3"
   }
 }

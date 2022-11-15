@@ -1,6 +1,6 @@
 import m from "mithril";
 
-export const Login = () => {
+export const LoginModel = () => {
   return {
     do: (email, password) => {
       return m
@@ -10,8 +10,8 @@ export const Login = () => {
           withCredentials: true,
           body: {
             email,
-            password
-          }
+            password,
+          },
         })
         .then((result) => {
           console.log(result);
@@ -19,6 +19,6 @@ export const Login = () => {
         .catch((e) => {
           console.log(JSON.stringify(e));
         });
-    }
+    },
   };
 };

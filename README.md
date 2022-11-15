@@ -1,29 +1,35 @@
 # mithril-boilerplate
 
-[Mithril.js](https://mithril.js.org/) boilerplate with [Vite](https://vitejs.dev/).
+[Mithril.js](https://mithril.js.org/) boilerplate with [Vite](https://vitejs.dev/) and [Rome](https://rome.tools/).
 
 # Using
 
 ## Setup
-
 ```shell
 npm install
 ```
 
 ## Running in dev
-
 ```shell
 npm run dev
 ```
 
-## Building for prod
-
+## Lint
 ```shell
-npm run build
+npm run lint
+```
+
+## Format
+```shell
+npm run format
 ```
 
 ## Running in prod preview
-
 ```shell
 npm run preview
+```
+
+## Building for prod
+```shell
+npm run build
 ```
