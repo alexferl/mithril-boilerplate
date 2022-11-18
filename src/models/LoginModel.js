@@ -2,9 +2,11 @@ import m from "mithril";
 
 export const LoginModel = () => {
   return {
-    do: (email, password) => {
-      return m
-        .request({
+    resp: {},
+    error: {},
+    do: async (email, password) => {
+      try {
+        const resp = await m.request({
           method: "POST",
           url: "https://httpbin.org/post",
           withCredentials: true,
@@ -12,13 +14,12 @@ export const LoginModel = () => {
             email,
             password,
           },
-        })
-        .then((result) => {
-          console.log(result);
-        })
-        .catch((e) => {
-          console.log(JSON.stringify(e));
         });
+        LoginModel.resp = resp;
+        return resp;
+      } catch (e) {
+        LoginModel.error = e;
+      }
     },
   };
 };
