@@ -8,7 +8,7 @@ export const LoginModel = () => {
       try {
         const resp = await m.request({
           method: "POST",
-          url: "https://httpbin.org/post",
+          url: "https://httpbingo.org/post",
           withCredentials: true,
           body: {
             email,

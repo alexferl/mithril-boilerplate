@@ -33,3 +33,15 @@ npm run preview
 ```shell
 npm run build
 ```
+
+# Docker
+
+## Build
+```shell
+docker build -t mithril-boilerplate .
+```
+
+## Run
+```shell
+docker run --name mithril-boilerplate -p 8080:8080 --rm mithril-boilerplate
+```
