@@ -1,6 +1,6 @@
 # mithril-boilerplate
 
-[Mithril.js](https://mithril.js.org/) boilerplate with [Vite](https://vitejs.dev/) and [Rome](https://rome.tools/).
+[Mithril.js](https://mithril.js.org/) boilerplate with [Vite](https://vitejs.dev/) and [Biome](https://biomejs.dev/).
 
 # Using
 
