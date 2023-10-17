@@ -3,9 +3,9 @@ import m from "mithril";
 export const LoginModel = {
   response: null,
   error: null,
-  login: async (email, password) => {
-    try {
-      LoginModel.response = await m.request({
+  login: (email, password) => {
+    return m
+      .request({
         method: "POST",
         url: "https://httpbingo.org/post",
         withCredentials: true,
@@ -13,9 +13,12 @@ export const LoginModel = {
           email,
           password,
         },
+      })
+      .then((resp) => {
+        LoginModel.response = resp;
+      })
+      .catch((err) => {
+        LoginModel.error = err;
       });
-    } catch (e) {
-      LoginModel.error = e;
-    }
   },
 };
