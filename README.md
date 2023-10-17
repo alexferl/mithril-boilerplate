@@ -24,14 +24,14 @@ npm run lint
 npm run format
 ```
 
-## Running in prod preview
-```shell
-npm run preview
-```
-
 ## Building for prod
 ```shell
 npm run build
+```
+
+## Running in prod preview
+```shell
+npm run preview
 ```
 
 # Docker
