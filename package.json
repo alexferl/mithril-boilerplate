@@ -1,6 +1,6 @@
 {
   "name": "mithril-boilerplate",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
@@ -15,5 +15,9 @@
   "devDependencies": {
     "@biomejs/biome": "1.2.2",
     "vite": "4.4.11"
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
   }
 }
