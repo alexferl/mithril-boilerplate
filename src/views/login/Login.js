@@ -38,14 +38,13 @@ export const Login = {
           m("button", { type: "submit" }, "Log in"),
         ],
       );
-    } else {
-      return m("main", [
-        m("h1", "response"),
-        m("label", "email"),
-        m("p", LoginModel.response.json.email),
-        m("label", "password"),
-        m("p", LoginModel.response.json.password),
-      ]);
     }
+    return m("main", [
+      m("h1", "response"),
+      m("label", "email"),
+      m("p", LoginModel.response.json.email),
+      m("label", "password"),
+      m("p", LoginModel.response.json.password),
+    ]);
   },
 };
